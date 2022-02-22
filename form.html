@@ -1,0 +1,49 @@
+<html>
+
+	<head>
+		<title>Booking Form</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="form-style-2">
+		<div class="form-style-2-heading">Meeting Room Booking</div>
+		<form action="" method="post">
+		
+		<label for="host"><span>Host <span class="required">*</span></span><input type="text" class="input-field" name="host" value="" /></label>
+		<label for="purpose"><span>Purpose <span class="required">*</span></span><textarea name="purpose" class="textarea-field"></textarea></label>
+		<label for="no_of_pax"><span>No. of pax <span class="required">*</span></span><input type="text" class="input-field" name="no_of_pax" value="" /></label>
+		
+		<label for="office_level"><span>Office Level <span class="required">*</span></span><select name="office_level" class="select-field">
+		<option value="L1">Level 1</option>
+		<option value="L2">Level 2</option>
+		<option value="L3">Level 3</option>
+		</select></label>
+		
+		<label for="equipment"><span>Equipment required <span class="required">*</span></span><select name="equipment" class="select-field">
+		<option value="TV/Projector">TV/Projector</option>
+		<option value="Microphone">Microphone</option>
+		<option value="Whiteboard">Whiteboard</option>
+		</select></label>
+		
+	
+		<label for="start_date"><span>Start date: <span class="required">*</span></span><input type="datetime-local" class="input-field" id="start_date" name="start_date" min="09:00" max="18:00" ></label>
+
+		
+		<label for="duration"><span>Duration <span class="required">*</span></span><select name="duration" class="select-field">
+		<option value="one_hour">1 Hour</option>
+		<option value="two_hour">2 Hour</option>
+		<option value="three_hour">3 Hour</option>
+		<option value="four_hour">4 Hour</option>
+		<option value="five_hour">5 Hour</option>
+		</select></label>
+
+		<label for="recurring"><span>Recurring <span class="required">*</span></span><input type="checkbox" name="recurring" /></label>
+
+
+		<label><span> </span><input type="submit" value="Submit" /></label>
+		</form>
+		</div>
+	</body>
+
+</html>
